@@ -1,30 +1,148 @@
-@import "./base.css";
+@import './base.css';
 
 :root {
-    --color-white: #fff;
+	--color-white: #fff;
+	--color-blue-1: #1f2d37;
+	--color-blue-2: rgb(51, 51, 51);
+	--color-blue-3: #17497b;
+	--color-blue-4: rgb(198, 215, 233);
+	--color-black-1: #141d24;
+	--color-red-1: #f86b4f;
+	--color-yellow-1: #f6c91b;
+	--color-green-1: rgb(64, 211, 183);
+
+	--color-cazeus: #0f1525;
+	--color-r2pbet: #163351;
+	--color-basswin: #0e2c2e;
+	--color-fatpirate: #5b3824;
+	--color-memocasino: #161618;
+	--color-kinghills: #163d8c;
+	--color-amonbet: #000000;
+	--color-gransino: #000000;
+	--color-heyspin: #000000;
+	--color-jokabet: #1e2132;
+	--color-rolletto: #1e2132;
+	--color-tikitaka: #000000;
+	--color-velobet: #000000;
+	--color-ninewin: #070e28;
+	--color-f7casino: #000000;
+	--color-loki: #213043;
+	--color-tikitaka: #000000;
+	--color-gransino: #000000;
+	--color-cosmobet: #101113;
+	--color-goldenmister: #001553;
+	--color-bountyreels: #00013a;
+	--color-luckymister: #000000;
+	--color-verywell: #000031;
+
+	--fontSize-12: 12px;
+	--fontSize-14: 14px;
+	--fontSize-16: 16px;
+	--fontSize-20: 20px;
+	--fontSize-24: 24px;
+	--fontSize-32: 32px;
+
+	--weight-regular: 400;
+	--weight-medium: 500;
+	--weight-semibold: 600;
+	--weight-bold: 700;
+	--weight-black: 900;
 }
 
 /* REUSED STYLES */
 
 /* HEADER */
-
+.header {
+	background-color: var(--color-blue-1);
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header__container {
+	width: min(1400px, 100%);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
+}
+.header__logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.header__logo-img {
+	height: 40px;
+	width: 40px;
+}
+.header__logo-text {
+	color: var(--color-white);
+	text-transform: uppercase;
+	font-size: var(--fontSize-24);
+}
+.header__nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.header__nav-link {
+	color: var(--color-blue-4);
+}
+.header__best {
+	margin-left: auto;
+	background-color: var(--color-yellow-1);
+	padding: 6px 8px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+.header__best-icon {
+	width: 16px;
+	height: 16px;
+	background-color: var(--color-blue-1);
+	clip-path: polygon(
+		50% 0%,
+		61% 35%,
+		98% 35%,
+		68% 57%,
+		79% 91%,
+		50% 70%,
+		21% 91%,
+		32% 57%,
+		2% 35%,
+		39% 35%
+	);
+}
+.header__best-text {
+	color: var(--color-blue-1);
+	font-weight: var(--weight-bold);
+}
+.header__toggle-btn {
+	display: none;
+}
+.header__line {
+}
+.header__line--1 {
+}
+.header__line--2 {
+}
+.header__line--3 {
+}
 /* MAIN */
 
 /* FOOTER */
 
 /* MEDIA */
-@media(max-width: 1200px) {
-
+@media (max-width: 1200px) {
 }
-@media(max-width: 960px) {
-
+@media (max-width: 960px) {
 }
-@media(max-width: 720px) {
-
+@media (max-width: 720px) {
 }
-@media(max-width: 540px) {
-
+@media (max-width: 540px) {
 }
-@media(max-width: 420px) {
-    
+@media (max-width: 420px) {
 }
