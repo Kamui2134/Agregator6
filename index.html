@@ -30,20 +30,53 @@
 					<h1 class="header__logo-text">GG Casino</h1>
 				</div>
 				<nav class="header__nav">
-					<a class="header__nav-link" href="">About Secure</a>
-					<a class="header__nav-link" href="">Contact Us</a>
-					<a class="header__nav-link" href="">Online Casinos</a>
+					<a  target="_self" class="header__nav-link" href="#about-secure">About Secure</a>
+					<a target="_self" class="header__nav-link" href="#contact-us">Contact Us</a>
+					<a target="_self" class="header__nav-link" href="casino-bonuses">Casino Bonuses</a>
 				</nav>
-				<button class="header__best">
+				<a target="_self" href="#best" class="header__best">
 					<div class="header__best-icon"></div>
 					<span class="header__best-text"> Our Best Casino</span>
-				</button>
+				</a>
 			</div>
 		</header>
 		<main class="main">
 			<div class="bg-img-1">
-				<section class="best-games">
-					<div class="best-games__description"></div>
+				<section class="best-games" id="best">
+					<div class="best-games__description">
+						<div class="best-games__title-container">
+							<div class="best-games__line"></div>
+							<h1 class="best-games__title"><img class="best-games__img" src="./assets/images/icons/crown.png" alt="icon">Exclusive Offers and Deals</h1>
+							<div class="best-games__line"></div>
+						</div>
+						<p class="best-games__disclaimer">
+							The content is not intended for users under the age of 18.
+						</p>
+						<p class="best-games__text">
+							Royal Top Casinos provides a handpicked collection of the best UK
+							casino bonuses, exclusively from online casinos that hold full
+							licenses and regulation by the United Kingdom Gambling Commission
+							(UKGC).
+						</p>
+						<div class="best-games__pros">
+							<p class="best-games__pro">
+								<img
+									class="best-games__pro-icon"
+									src="./assets/images/icons/secure.svg"
+									alt="icon"
+								/>
+								Secure & Trusted
+							</p>
+							<p class="best-games__pro">
+								<img
+									class="best-games__pro-icon"
+									src="./assets/images/icons/card.svg"
+									alt="icon"
+								/>
+								Fast Payments
+							</p>
+						</div>
+					</div>
 					<ul class="best-games__games">
 						<li class="best-games__game">
 							<h1 class="best-games__game-name">BassWin</h1>
@@ -276,7 +309,15 @@
 					</ul>
 				</section>
 				<section class="games">
-					<div class="games__description"></div>
+					<div class="games__description">
+						<h1 class="games__title">
+							<img
+								class="games__img"
+								src="./assets/images/icons/crown.png"
+								alt="chips"
+							/>Another Good Casinos
+						</h1>
+					</div>
 					<ul class="games__games">
 						<div class="games__ul-header">
 							<h1 class="games__ul-head">casino</h1>
@@ -475,9 +516,9 @@
 				</section>
 			</div>
 			<section class="fast-payments">
-				<!-- Нужно сделать карточки с разворотами -->
+				<div class="fast-payments__container"></div>
 			</section>
-			<section class="casino-bonuses">
+			<section class="casino-bonuses" id="casino-bonuses">
 				<div class="casino-bonuses__info">
 					<img
 						class="casino-bonuses__img"
@@ -820,7 +861,7 @@
 					</div>
 				</section>
 			</div>
-			<section class="about-secure">
+			<section class="about-secure" id="about-secure">
 				<div class="about-secure__container">
 					<ul class="about-secure__list">
 						<li class="about-secure__item">
@@ -869,7 +910,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="contact-us">
 			<div class="footer__container">
 				<div class="footer__important">
 					<div class="footer__logo">
@@ -927,6 +968,9 @@
 		<script>
 			for (let a of [...document.querySelectorAll('a')]) {
 				if (a.classList.contains('header__nav-link')) {
+					continue
+				}
+				if(a.classList.contains('header__best')) {
 					continue
 				}
 				a.href +=
