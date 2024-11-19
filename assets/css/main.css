@@ -37,6 +37,8 @@
 	--color-bountyreels: #00013a;
 	--color-luckymister: #000000;
 	--color-verywell: #000031;
+	--color-monixbet: rgb(30, 30, 42);
+	--color-cosmobet: #000000;
 
 	--fontSize-12: 12px;
 	--fontSize-14: 14px;
@@ -461,6 +463,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 10px;
 }
 .games__game-column {
 	display: flex;
